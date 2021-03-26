@@ -10,9 +10,9 @@ SET NAMES utf8mb4;
 CREATE TABLE `xxl_job_info` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `job_group` int(11) NOT NULL COMMENT '执行器主键ID',
-  `job_desc` varchar(255) NOT NULL,
-  `add_time` datetime DEFAULT NULL,
-  `update_time` datetime DEFAULT NULL,
+  `job_desc` varchar(255) NOT NULL COMMENT '任务描述',
+  `add_time` datetime DEFAULT NULL COMMENT '添加时间',
+  `update_time` datetime DEFAULT NULL COMMENT '更新时间',
   `author` varchar(64) DEFAULT NULL COMMENT '作者',
   `alarm_email` varchar(255) DEFAULT NULL COMMENT '报警邮件',
   `schedule_type` varchar(50) NOT NULL DEFAULT 'NONE' COMMENT '调度类型',
